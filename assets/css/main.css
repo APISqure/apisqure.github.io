@@ -3069,6 +3069,7 @@ input, select, textarea {
 
 				.spotlight .image img {
 					width: 12em;
+					margin: auto;
 				}
 
 		}
