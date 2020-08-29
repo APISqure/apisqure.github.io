@@ -177,7 +177,7 @@ input, select, textarea {
 	}
 
 	p {
-		margin: 0 0 2em 0;
+		margin: 0 0 1em 0;
 	}
 
 		p.content {
@@ -265,14 +265,14 @@ input, select, textarea {
 		padding: 0.25em 0.65em;
 	}
 
-	pre {
+	.code-block {
 		-webkit-overflow-scrolling: touch;
 		font-family: "Courier New", monospace;
 		font-size: 0.9em;
 		margin: 0 0 2em 0;
 	}
 
-		pre code {
+		code {
 			display: block;
 			line-height: 1.75;
 			padding: 1em 1.5em;
@@ -3868,4 +3868,12 @@ input, select, textarea {
 
 		.no-bottom {
 			margin: 0 0 1em 0;
+		}
+
+		li p {
+			margin: 0 0 0.4em 0;
+		}
+
+		li p .code-block {
+			margin: 0 0 0.7em 0;
 		}
