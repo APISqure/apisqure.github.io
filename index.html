@@ -86,7 +86,7 @@
 											<a target="_blank" href="https://github.com/apisquare/envone/issues" rel="nofollow"><img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/apisquare/envone?logo=github&style=for-the-badge"></a>
 										</p>
 										<p>EnvOne is a zero-dependency module that loads dynamic environment configurations from a 
-											<b>.env.config</b> file, and process it as environment variables into <b>process.env</b> 
+											<p class="code-inline">.env.config</p> file, and process it as environment variables into <p class="code-inline">process.env</p> 
 											- Relief from messing with your Node.js environments!</p>
 											<h3>Why EnvOne?</h3>
 											<ul>
@@ -115,15 +115,15 @@
 												</li>
 												<li>
 													<p>Where do you keep your environment variables across your environments? 
-														You can commit .env.config to your version control to reduce your management of non-secret environment variables.</p>
+														You can commit <p class="code-inline">.env.config</p> to your version control to reduce your management of non-secret environment variables.</p>
 												</li>
 											</ul>		
 										
 											<span class="image main"><img src="images/envone-flow.png" alt=""></span>
 											
 										<ul class="actions">
-											<li><a target="_blank" href="https://www.npmjs.com/package/envone" class="button npm">NPM Module</a></li>
-											<li><a target="_blank" href="https://github.com/apisquare/envone" class="button">GitHub</a></li>
+											<li><a target="_blank" href="https://www.npmjs.com/package/envone" class="button npm"><p class="icon brands fa-npm no-border"></p>NPM Module</a></li>
+											<li><a target="_blank" href="https://github.com/apisquare/envone" class="button"> <p class="icon brands fa-github no-border"></p>GitHub</a></li>
 											<li><a target="_blank" href="https://github.com/apisquare/envone/tree/master/example" class="button">Example</a></li>
 										</ul>
 									</div>
@@ -148,11 +148,28 @@
 										</p>
 										<p>EnvOne-UI provides a dashboard to review your application's runtime environment variables.</p>
 										
+										<p>
+											<ul>
+												<li>
+													EnvOne-UI is a portable package which can be configured easily with your Node.js project.
+													<p class="code-block">
+														<code> 
+															const configuredEnv = require('envone').config(); // Configure EnvOne  <br />
+															const envOneUI = require('envone-ui'); 	// import envone-ui <br />
+															const app = express(); // create express server <br />
+															app.use(envOneUI(configuredEnv)) <br />
+														</code>
+													</p>
+												</li>
+												<li> Provides support to configure with <a target="_blank" href="https://www.npmjs.com/package/envone">EnvOne</a> and <a target="_blank" href="https://www.npmjs.com/package/dotenv">DotEnv</a> environment parsing packages.</li>
+												<li> Contains minimal authorization mechanism to prevent from unauthorized access to environment dashboard.</li>
+											</ul>
+										</p>
 										<span class="image main"><img src="images/envone-ui-flow.gif" alt=""></span>
 										
 										<ul class="actions">
-											<li><a target="_blank" href="https://www.npmjs.com/package/envone-ui" class="button npm">NPM Module</a></li>
-											<li><a target="_blank" href="https://github.com/apisquare/envone-ui" class="button">GitHub</a></li>
+											<li><a target="_blank" href="https://www.npmjs.com/package/envone-ui" class="button npm"><p class="icon brands fa-npm no-border"></p>NPM Module</a></li>
+											<li><a target="_blank" href="https://github.com/apisquare/envone-ui" class="button"><p class="icon brands fa-github no-border"></p>GitHub</a></li>
 											<li><a target="_blank" href="https://github.com/apisquare/envone-ui/tree/master/example" class="button">Example</a></li>
 										</ul>
 									</div>
@@ -177,16 +194,26 @@
 										</p>
 
 										<p>Realtime Health Status API for Node applications with Express framework..</p>
-										
-										
+										<p>
+											<h3> Features</h3>
+											<ul>
+												<li>Provides default <p class="code-inline">/status</p> api to serve the health statuses</li>
+												<li>Configurable health API to customize the health endpoint for your requirement (attributes).</li>
+												<li>Contains System properties(CPU, Memory), Custom services(e.g: Docker), Request and Response statistics with health API response.</li>
+												<li>Attach status of the dependent services/consumed services with your health API response</li>
+												<li>Customize your server API statuses with dependent services/consumed services</li>
+												<li>Secure your health endpoint before exposing your server related details</li>
+											</ul>
+										</p>
+										<span class="image main"><img src="images/express-health-api-response.png" alt=""></span>
 										
 										<ul class="actions">
-											<li><a target="_blank" href="https://www.npmjs.com/package/express-health-api" class="button npm">NPM Module</a></li>
-											<li><a target="_blank" href="https://github.com/apisquare/express-health-api" class="button">GitHub</a></li>
+											<li><a target="_blank" href="https://www.npmjs.com/package/express-health-api" class="button npm"><p class="icon brands fa-npm no-border"></p>NPM Module</a></li>
+											<li><a target="_blank" href="https://github.com/apisquare/express-health-api" class="button"><p class="icon brands fa-github no-border"></p>GitHub</a></li>
 											<li><a target="_blank" href="https://github.com/apisquare/express-health-api/tree/master/test-server" class="button">Example</a></li>
 										</ul>
 									</div>
-									<span class="image need-margin-left size-175"><img src="images/express-health-api.jpg" alt=""></span>
+									
 								</div>
 							</section>
 
@@ -212,18 +239,17 @@
 						<section>
 							<h2>API Square</h2>
 							<p>API Square is an open source organization focusing on developing ideas to make developer's life more easy towards the development.</p>
-							<ul class="actions">
+							<!-- <ul class="actions">
 								<li><a target="_blank" href="https://github.com/apisquare" class="button primary">Go to GitHub organization</a></li>
-							</ul>
+							</ul> -->
 						</section>
 						<section>
 							<h2>Other Links</h2>
 							<ul class="icons">
-								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+								<li><a target="_blank" href="https://www.linkedin.com/company/api-square" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
+								<!-- <li><a target="_blank" href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li> -->
+								<!-- <li><a target="_blank" href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li> -->
+								<li><a target="_blank" href="https://github.com/apisquare" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
 							</ul>
 						</section>
 						<p class="copyright">&copy; 2020 - API Square. Template from: <a href="https://html5up.net">HTML5 UP</a>.</p>
